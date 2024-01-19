@@ -23,13 +23,13 @@
   <body>
     
       <h1 class="text-center mt-2 mb-4">Portfolio</h1>
-      <img class="img-fluid" id="banner" src="https://flaskfccjoivia.manthansrivasta.repl.co/static/banner.jpg" alt="banner">
+      <img class="img-fluid" id="banner" src="https://a159b333-21cf-456c-b5ee-d99bca740780-00-3qstr1snhgbom.worf.replit.dev/static/banner.jpg" alt="banner">
       
 
     <!--ABOUT-->
       <h2 class="text-center">About</h2>
       
-        <p class="lead">
+        <p style="margin-left:5%; margin-right:5%;" class="lead">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam ipsa! Quos dolore delectus nemo, 
           eligendi velit harum id quas optio molestiae necessitatibus aliquid sit sapiente nesciunt modi mollitia 
           consequuntur!
@@ -39,17 +39,20 @@
           consequuntur!
         </p>
     <!--ABOUT-->
-      
 
-    <!--SKILLS-->
-    <h2 class="text-center">Skills</h2>
 
-    <!--Bootstrap-->
+    <!--JOBS-->  
+    <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     
-    
-    <!--Bootstrap-->
-    
-    <!--SKILLS-->
+    <!-- The code in this <p> tag is not html or css ,this is something that flask has provided 
+    called templating syntax.It is a way to insert dynamic data into html and css -->
+        
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
+          
 
       <div style="text-align:center;">
         <button class="btn btn-outline-primary">Contact Us</button>
