@@ -1,0 +1,6 @@
+requirements.txt = It is standard in python ecosystem and u want to specify that the project requires certain libraries, then it's a convention to put that information inside requirements.txt file
+
+requirements.txt/gunicorn = This is a production server for python
+-- flask gives a warning that we can't use the address for production purposes and can only use it for development.
+
+-- so whenever we want to put a flask app into production we need to use gunicorn library
