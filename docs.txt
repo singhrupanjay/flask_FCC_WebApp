@@ -4,3 +4,13 @@ requirements.txt/gunicorn = This is a production server for python
 -- flask gives a warning that we can't use the address for production purposes and can only use it for development.
 
 -- so whenever we want to put a flask app into production we need to use gunicorn library
+
+-- gunicorn library when installed it also adds a command called <gunicorn>. And this command needs to be given the name of the file that needs to be executed which is app.py
+
+-- we also hav to specify the name of the actual variable which contains the flask application that we want to run
+
+for all commands needed to deploy a flask app
+                        |
+                        |
+                        V
+       https://docs.render.com/deploy-flask
